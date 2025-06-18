@@ -1,0 +1,25 @@
+{
+  "name": "color-guess",
+  "version": "1.0.0",
+  "description": "Jogo Adivinhe a Cor feito por Bruna Cardoso",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:styles": "stylelint **/*.css"
+  },
+  "devDependencies": {
+    "eslint": "^9.29.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^30.0.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
