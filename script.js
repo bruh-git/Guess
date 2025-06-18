@@ -49,11 +49,17 @@ scoreElement.innerText = "Pontos: " + contador;
 // verifica se a cor que voce escolhe é a mesma da cor gerada automaticamente
 function selecionarBall(event) {
     event.target.classList.add('selected');
+
     if (event.target.style.backgroundColor === colorRgb.innerText) {
-        Elementanswer.innerText = 'Acertou!'
-        scoreElement.innerText = "Pontos: " + (contador +=3);
+        Elementanswer.innerText = 'Acertou!';
+        scoreElement.innerText = "Pontos: " + (contador += 3);
+
+        // Impede pontuação dupla
+        setTimeout(() => {
+        reseta(); // Reinicia o jogo automaticamente
+        }, 500); // pequeno delay para mostrar o "Acertou!"
     } else {
-        Elementanswer.innerText = 'Errou! Tente novamente!'
+        Elementanswer.innerText = 'Errou! Tente novamente!';
     }
 }
 // reseta o jogo assim que clicar no botão e sem perder os pontos do placar 
