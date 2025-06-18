@@ -4,7 +4,7 @@
   "description": "Jogo Adivinhe a Cor feito por Bruna Cardoso",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "eslint .",
     "lint:styles": "stylelint **/*.css"
   },
